@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Public Library</title>
+    <link rel="stylesheet" type="text/css" 
+        href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+    <script src="lib/browserShims.js"></script>
+    <script src="lib/util.js"></script>
+    <script src="lib/errorTypes.js"></script>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Book.js"></script>
+</head>
+<body>
+    <h1>Public Library</h1>
+    <menu>
+        <li>
+            <a href="listBooks.html">
+                <button type="button">List all books</button>
+            </a>
+        </li>
+        <li>
+            <a href="createBook.html">
+                <button type="button">Add a new book</button>
+            </a>
+        </li>
+        <li>
+            <a href="updateBook.html">
+                <button type="button">Update a book</button>
+            </a>
+        </li>
+        <li>
+            <a href="deleteBook.html">
+                <button type="button">Delete a book</button>
+            </a>
+        </li>
+        <li>
+            <button type="button" onclick="Book.clearData()">Clear database</button>
+        </li>
+        <li>
+            <button type="button" onclick="Book.createTestData()">Create test data</button>
+        </li>
+    </menu>
+</body>
+</html>
